@@ -1,0 +1,36 @@
+<mat-nav-list>
+  <div class="profile-card">
+    <img src="assets/images/profile.jpg" alt="profile">
+    <div class="header">
+      <h5>Deme Einstein | Ingénieur</h5>
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Accueil</h2>
+
+  <a mat-list-item routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }" routerLink="/">
+    <mat-icon>dashboard</mat-icon> Tableau de bord
+  </a>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Paramètres</h2>
+
+  <a mat-list-item routerLinkActive="active" routerLink="/dossiers">
+    <mat-icon>import_contacts</mat-icon>
+    Dossiers
+  </a>
+
+  <a mat-list-item routerLinkActive="active" routerLink="/contacts">
+    <mat-icon>contact_phone</mat-icon>
+    Contacts
+  </a>
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLinkActive="active" routerLink="/faq">
+    <mat-icon>help</mat-icon>
+    FAQ
+  </a>
+
+</mat-nav-list>
